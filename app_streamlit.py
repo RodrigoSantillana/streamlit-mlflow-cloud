@@ -15,7 +15,7 @@ load_dotenv()
 #     mlflow=True
 # )
 
-mlflow.set_tracking_uri("https://dagshub.com/reroes799/ejemplo02.mlflow")
+mlflow.set_tracking_uri("https://dagshub.com/RodrigoSantillana/clases-herramientas-ia.mlflow")
 
 st.set_page_config(
     page_title="Predicción Bank Marketing",
@@ -35,7 +35,7 @@ def cargar_modelo():
    """
     https://dagshub.com/reroes799/ejemplo02.mlflow/#/models/arboles02/versions/1
    """
-   return mlflow.sklearn.load_model("models:/arboles02/2")
+   return mlflow.sklearn.load_model("models:/arboles02/1")
 
 model = cargar_modelo()
 
