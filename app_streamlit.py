@@ -35,7 +35,7 @@ def cargar_modelo():
    """
     https://dagshub.com/reroes799/ejemplo02.mlflow/#/models/arboles02/versions/1
    """
-   return mlflow.sklearn.load_model("models:/arboles02/1")
+   return mlflow.sklearn.load_model("models:/arboles02/2")
 
 model = cargar_modelo()
 
